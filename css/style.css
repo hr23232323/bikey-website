@@ -1,0 +1,124 @@
+:root {
+    --light-div: #fff8dc;
+    --dark-div: #333333;
+
+}
+
+html,
+body {
+    height: 100%;
+}
+
+#landing-page {
+    background-image: url("/img/sample-landing-page.png");
+    height: 100%;
+}
+
+.section {
+    height: 40%;
+}
+
+.feature {
+    margin: 0;
+}
+
+.feature h2 {
+    font-size: 2.4em;
+}
+
+.feature p {
+    font-size: 1.4em;
+}
+
+
+
+.feature-image {
+    line-height: 0;
+}
+
+.feature-image {
+    padding: 0;
+}
+
+.feature-detail {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.columns:not(:last-child) {
+    margin-bottom: 0;
+}
+
+.dark,
+.light {
+    margin: 0;
+}
+
+.dark {
+    background-color: var(--dark-div);
+    color: var(--light-div);
+}
+
+.light {
+    background-color: var(--light-div);
+    color: var(--dark-div)
+}
+
+.dark h2 {
+    border-bottom: 1px solid var(--light-div);
+}
+
+.light h2 {
+    border-bottom: 1px solid var(--dark-div);
+}
+
+.feature-image img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+
+/*
+    Media Queries for mobile
+*/
+@media only screen and (max-width: 1330px) {
+    .feature-detail {
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+
+    .feature h2 {
+        font-size: 1.8em;
+    }
+
+    .feature p {
+        font-size: 1.2em;
+    }
+
+    .hero-body {
+        padding: 2rem 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 1150px) {
+
+    .feature h2 {
+        font-size: 1.4em;
+    }
+
+    .feature p {
+        font-size: 1em;
+    }
+
+    .hero-body {
+        padding: 1rem 1.2rem;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+
+
+    .hero-body {
+        padding: 0.6rem 1rem;
+    }
+}
