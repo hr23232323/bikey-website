@@ -52,6 +52,7 @@ body {
 .dark,
 .light {
     margin: 0;
+    height:
 }
 
 .dark {
@@ -73,15 +74,24 @@ body {
 }
 
 .feature-image img {
-    max-height: 100%;
-    max-width: 100%;
+    width: 100%;
+    height: 100%;
+}
+
+.hero-body p,
+h2 {
+    text-align: center;
+}
+
+#feature-2-mobile {
+    display: none;
 }
 
 
 /*
     Media Queries for mobile
 */
-@media only screen and (max-width: 1330px) {
+@media only screen and (max-width: 1400px) {
     .feature-detail {
         padding-left: 3%;
         padding-right: 3%;
@@ -100,7 +110,7 @@ body {
     }
 }
 
-@media only screen and (max-width: 1150px) {
+@media only screen and (max-width: 1200px) {
 
     .feature h2 {
         font-size: 1.4em;
@@ -115,10 +125,20 @@ body {
     }
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1000px) {
 
 
     .hero-body {
         padding: 0.6rem 1rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #feature-2-mobile {
+        display: block;
+    }
+
+    #feature-2 {
+        display: none;
     }
 }
