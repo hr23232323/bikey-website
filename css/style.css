@@ -7,26 +7,36 @@
 html,
 body {
     height: 100%;
+
+    background-color: var(--light-div);
+    color: var(--dark-div)
 }
 
 #landing-page {
-    background-image: url("/img/sample-landing-page.png");
-    height: 100%;
+    max-height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+#landing-page img {
+    width: 100%;
+    height: auto;
 }
 
 .section {
-    height: 40%;
+    height: auto;
 }
+
 
 .feature {
     margin: 0;
 }
 
-.feature h2 {
+h2 {
     font-size: 2.4em;
 }
 
-.feature p {
+p {
     font-size: 1.4em;
 }
 
@@ -78,14 +88,110 @@ body {
     height: 100%;
 }
 
-.hero-body p,
-h2 {
+.feature p,
+.feature h2 {
     text-align: center;
 }
 
 #feature-2-mobile {
     display: none;
 }
+
+/*
+    STORE IMAGEs 
+*/
+.container {
+    margin: 0 auto;
+    max-width: 80%;
+}
+
+
+/* Useful Classes */
+.xy-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.transition {
+    transition: all 350ms ease-in-out;
+}
+
+.r-3-2 {
+    width: 100%;
+    padding-bottom: 66.667%;
+    background-color: #ddd;
+}
+
+.image-holder {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+/* Main Styles */
+.gallery-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+.gallery {
+    position: relative;
+    white-space: nowrap;
+    font-size: 0;
+}
+
+.item-wrapper {
+    cursor: pointer;
+    width: 25%;
+    /* arbitrary value */
+    display: inline-block;
+    background-color: white;
+}
+
+.gallery-item {
+    opacity: 0.5;
+}
+
+.gallery-item.active {
+    opacity: 1;
+}
+
+.controls {
+    font-size: 0;
+    border-top: none;
+}
+
+.move-btn {
+    display: inline-block;
+    width: 50%;
+    border: none;
+    color: #ccc;
+    background-color: transparent;
+    padding: 0.2em 1.5em;
+}
+
+.move-btn:first-child {
+    border-right: none;
+}
+
+.move-btn.left {
+    cursor: w-resize;
+}
+
+.move-btn.right {
+    cursor: e-resize;
+}
+
+/*
+    Store Description
+*/
+
+.shop-description {
+    margin: auto auto;
+}
+
 
 
 /*
@@ -97,11 +203,11 @@ h2 {
         padding-right: 3%;
     }
 
-    .feature h2 {
+    h2 {
         font-size: 1.8em;
     }
 
-    .feature p {
+    p {
         font-size: 1.2em;
     }
 
@@ -112,11 +218,11 @@ h2 {
 
 @media only screen and (max-width: 1200px) {
 
-    .feature h2 {
+    h2 {
         font-size: 1.4em;
     }
 
-    .feature p {
+    p {
         font-size: 1em;
     }
 
@@ -130,6 +236,11 @@ h2 {
 
     .hero-body {
         padding: 0.6rem 1rem;
+    }
+
+    .shop-description h2,
+    .shop-description p {
+        text-align: center;
     }
 }
 
