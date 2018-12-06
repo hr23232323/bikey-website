@@ -1,7 +1,7 @@
 var gallery = document.querySelector('.gallery');
 var galleryItems = document.querySelectorAll('.gallery-item');
 var numOfItems = gallery.children.length;
-var itemWidth = 23; // percent: as set in css
+var itemWidth = 18; // percent: as set in css
 
 var featured = document.querySelector('.featured-item');
 
@@ -38,7 +38,7 @@ function galleryWrapRight() {
     var last = gallery.children[gallery.children.length - 1];
     gallery.removeChild(last);
     gallery.insertBefore(last, gallery.children[0]);
-    gallery.style.left = '-23%';
+    gallery.style.left = '-18%';
 }
 
 function moveLeft() {
@@ -95,12 +95,7 @@ function stopMovement() {
 		'https://s3-us-west-2.amazonaws.com/forconcepting/800Wide50Quality/city.jpg',
 		'https://s3-us-west-2.amazonaws.com/forconcepting/800Wide50Quality/deer.jpg',
 		'https://s3-us-west-2.amazonaws.com/forconcepting/800Wide50Quality/flowers.jpg',
-		'https://s3-us-west-2.amazonaws.com/forconcepting/800Wide50Quality/food.jpg',
-		'https://s3-us-west-2.amazonaws.com/forconcepting/800Wide50Quality/guy.jpg',
-		'https://s3-us-west-2.amazonaws.com/forconcepting/800Wide50Quality/landscape.jpg',
-		'https://s3-us-west-2.amazonaws.com/forconcepting/800Wide50Quality/lips.jpg',
-		'https://s3-us-west-2.amazonaws.com/forconcepting/800Wide50Quality/night.jpg',
-		'https://s3-us-west-2.amazonaws.com/forconcepting/800Wide50Quality/table.jpg'
+		'https://s3-us-west-2.amazonaws.com/forconcepting/800Wide50Quality/food.jpg'
 	];
 
     //Set Initial Featured Image
