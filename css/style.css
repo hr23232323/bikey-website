@@ -35,15 +35,16 @@ body {
 }
 
 h2 {
-    font-size: 2.4em;
+    font-size: 1.2em;
 }
 
 p {
-    font-size: 1.4em;
+    font-size: 1em;
+    line-height: 2em;
 }
 
 a {
-    width: 80%;
+    width: 30%;
 }
 
 .k {
@@ -59,15 +60,12 @@ a {
 
 .feature-image {
     line-height: 0;
-}
-
-.feature-image {
     padding: 0;
 }
 
 .feature-detail {
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 .columns:not(:last-child) {
@@ -77,7 +75,6 @@ a {
 .dark,
 .light {
     margin: 0;
-    height:
 }
 
 .dark {
@@ -91,11 +88,11 @@ a {
 }
 
 .dark h2 {
-    border-bottom: 1px solid var(--light-div);
+    border-bottom: 1px solid #777;
 }
 
 .light h2 {
-    border-bottom: 1px solid var(--dark-div);
+    border-bottom: 1px solid #ddd;
 }
 
 .feature-image img {
@@ -128,6 +125,71 @@ a {
     display: none;
 }
 
+.feature .hero-body div {
+    padding-top: 10%;
+}
+
+.feature h2 {
+    text-transform: uppercase;
+    color: #DAA520;
+    padding-bottom: 2%;
+    margin-bottom: 10%;
+}
+
+.feature-image {
+    position: relative;
+    text-align: center;
+    align-content: center;
+}
+
+.feature-image a {
+    position: absolute;
+    top: 80%;
+    left: 33.5%;
+}
+
+.dark .button.is-primary.is-inverted.is-outlined {
+    background-color: var(--light-div);
+    border-color: var(--light-div);
+    color: #DAA520;
+    opacity: 0;
+    transition: 0.5s;
+
+}
+
+.light .button.is-primary.is-inverted.is-outlined {
+    background-color: var(--dark-div);
+    border-color: var(--dark-div);
+    color: #DAA520;
+    opacity: 0;
+    transition: 0.5s;
+
+}
+
+
+div:hover .button.is-primary.is-inverted.is-outlined {
+    background-color: var(--dark-div);
+    border-color: var(--dark-div);
+    color: #DAA520;
+    transform: scale(1.1, 1.1);
+    opacity: 1;
+}
+
+.button.is-success {
+    background-color: var(--light-div);
+    border-color: var(--light-div);
+    color: var(--dark-div);
+    opacity: 0.6;
+    transition: 0.3s;
+}
+
+div:hover .button.is-success {
+    background-color: var(--light-div);
+    border-color: var(--light-div);
+    color: var(--dark-div);
+    opacity: 1;
+    transform: scale(1.1, 1.1);
+}
 
 /*
     STORE IMAGEs 
@@ -316,6 +378,10 @@ a {
 
     .gallery-item.active {
         border-bottom: 5px solid var(--dark-div);
+    }
+
+    .feature .hero-body div {
+        padding-top: 0;
     }
 }
 
