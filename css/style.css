@@ -6,7 +6,6 @@
 
 html,
 body {
-
     height: 100%;
     background-color: var(--dark-div);
     color: var(--light-div)
@@ -66,6 +65,10 @@ a {
 .feature-detail {
     padding-left: 10%;
     padding-right: 10%;
+}
+
+.shop-description a {
+    width: 50%;
 }
 
 .columns:not(:last-child) {
@@ -148,29 +151,19 @@ a {
     left: 33.5%;
 }
 
-.dark .button.is-primary.is-inverted.is-outlined {
-    background-color: var(--light-div);
-    border-color: var(--light-div);
-    color: #DAA520;
-    opacity: 0;
-    transition: 0.5s;
-
-}
-
+.dark .button.is-primary.is-inverted.is-outlined,
 .light .button.is-primary.is-inverted.is-outlined {
     background-color: var(--dark-div);
     border-color: var(--dark-div);
     color: #DAA520;
     opacity: 0;
     transition: 0.5s;
-
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 
 div:hover .button.is-primary.is-inverted.is-outlined {
-    background-color: var(--dark-div);
-    border-color: var(--dark-div);
-    color: #DAA520;
     transform: scale(1.1, 1.1);
     opacity: 1;
 }
@@ -179,7 +172,9 @@ div:hover .button.is-primary.is-inverted.is-outlined {
     background-color: var(--light-div);
     border-color: var(--light-div);
     color: var(--dark-div);
-    opacity: 0.6;
+    padding-left: 10%;
+    padding-right: 10%;
+    opacity: 1;
     transition: 0.3s;
 }
 
@@ -187,7 +182,10 @@ div:hover .button.is-success {
     background-color: var(--light-div);
     border-color: var(--light-div);
     color: var(--dark-div);
+    padding-left: 10%;
+    padding-right: 10%;
     opacity: 1;
+    font-weight: bold;
     transform: scale(1.1, 1.1);
 }
 
@@ -371,6 +369,11 @@ div:hover .button.is-success {
         padding: 0.6rem 1rem;
     }
 
+
+    .feature-image a {
+        top: 60%;
+    }
+
     .shop-description h2,
     .shop-description p {
         text-align: center;
@@ -383,6 +386,11 @@ div:hover .button.is-success {
     .feature .hero-body div {
         padding-top: 0;
     }
+
+    .dark .button.is-primary.is-inverted.is-outlined,
+    .light .button.is-primary.is-inverted.is-outlined {
+        opacity: 1;
+    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -392,13 +400,21 @@ div:hover .button.is-success {
         display: block;
     }
 
+    .feature-image a {
+        top: 70%;
+    }
+
+    .button .is-success {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
     #feature-2,
     #feature-4 {
         display: none;
     }
 
     #feature-other {
-
         background-color: var(--light-div);
         color: var(--dark-div)
     }
