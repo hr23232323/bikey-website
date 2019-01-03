@@ -91,11 +91,11 @@ function stopMovement() {
 //Start this baby up
 (function init() {
     var images = [
-		'https://s3-us-west-2.amazonaws.com/forconcepting/800Wide50Quality/car.jpg',
-		'https://s3-us-west-2.amazonaws.com/forconcepting/800Wide50Quality/city.jpg',
-		'https://s3-us-west-2.amazonaws.com/forconcepting/800Wide50Quality/deer.jpg',
-		'https://s3-us-west-2.amazonaws.com/forconcepting/800Wide50Quality/flowers.jpg',
-		'https://s3-us-west-2.amazonaws.com/forconcepting/800Wide50Quality/food.jpg'
+		'img/1.jpg',
+		'img/2.jpg',
+		'img/3.jpg',
+		'img/4.jpg',
+		'img/5.jpg'
 	];
 
     //Set Initial Featured Image

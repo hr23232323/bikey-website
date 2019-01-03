@@ -101,6 +101,10 @@ div a,
     font-size: 3em;
 }
 
+.shop-description p {
+    font-size: 1.2em;
+    line-height: 1.4em;
+}
 
 .shop-description a {
     width: 50%;
