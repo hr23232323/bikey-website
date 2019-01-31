@@ -1,5 +1,5 @@
 :root {
-    --light-div: #fff8dc;
+    --light-div: #ffffff;
     --dark-div: #333333;
     --bikey: #f7941d;
 
@@ -15,17 +15,14 @@
 html,
 body {
     height: 100%;
-    background-color: var(--dark-div);
-    color: var(--light-div);
+    background-color: var(--light-div);
+    color: var(--dark-div);
     font-family: 'Open Sans', sans-serif;
 }
 
 #landing-page {
     /* The image used */
     background-image: url("../img/landing.jpg");
-
-    /* Full height */
-    height: 100%;
 
     /* Center and scale the image nicely */
     background-position: center;
@@ -41,18 +38,24 @@ body {
     transform: rotate(-10deg)
 }
 
+#landing-page video {
+    width: 100%;
+}
+
 .section {
     height: auto;
 }
 
 
 .feature {
+    display: relative;
     margin: 0;
 }
 
 h2 {
     font-size: 2.4em;
     font-family: 'Cabin Sketch', cursive;
+    text-shadow: 1px 1px 1px #ccc;
 }
 
 p {
@@ -75,16 +78,17 @@ div a,
 
 .copy {
     vertical-align: super;
-    font-size: smaller;
+    font-size: 12px
 }
 
 .bikey-text {
     font-family: "Gluk";
     letter-spacing: 2px;
-    padding: 5px;
-    padding-left: 10px;
     color: var(--light-div);
-    background-color: var(--dark-div)
+}
+
+.light .bikey-text {
+    color: var(--dark-div);
 }
 
 .feature-image {
@@ -110,6 +114,11 @@ div a,
     width: 50%;
 }
 
+#store figure,
+#store .item-wrapper {
+    border-radius: 100px;
+}
+
 .columns:not(:last-child) {
     margin-bottom: 0;
 }
@@ -117,6 +126,8 @@ div a,
 .dark,
 .light {
     margin: 0;
+    padding-top: 5%;
+    padding-bottom: 5%;
 }
 
 .dark {
@@ -178,6 +189,19 @@ div a,
     margin-bottom: 5%;
 }
 
+.dark,
+#store {
+    background-image: url(../img/back.jpg);
+    background-position: bottom;
+    background-size: cover;
+}
+
+#store {
+    padding-left: 15%;
+    padding-right: 15%;
+    color: var(--light-div)
+}
+
 .feature-image {
     position: relative;
     text-align: center;
@@ -186,7 +210,7 @@ div a,
 
 .feature-image a {
     position: absolute;
-    bottom: 5%;
+    bottom: 3%;
     left: 33.5%;
 }
 
@@ -194,7 +218,7 @@ div a,
     background-color: var(--dark-div);
     border-color: var(--dark-div);
     color: var(--bikey);
-    opacity: 0.5;
+    opacity: 1;
     transition: 0.5s;
     text-transform: uppercase;
     font-weight: bold;
@@ -204,7 +228,7 @@ div a,
     background-color: var(--light-div);
     border-color: var(--light-div);
     color: var(--bikey);
-    opacity: 0.5;
+    opacity: 1;
     transition: 0.5s;
     text-transform: uppercase;
     font-weight: bold;
@@ -212,7 +236,7 @@ div a,
 
 
 div:hover .button.is-primary.is-inverted.is-outlined {
-    transform: scale(1.1, 1.1);
+    transform: scale(1.3, 1.1);
     opacity: 1;
     box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.2);
 
@@ -354,7 +378,7 @@ div:hover .button.is-success {
 .gallery-item.active {
     opacity: 1;
     /*border-bottom: 6px solid var(--light-div);*/
-    border-bottom: 8px solid var(--dark-div);
+    border-bottom: 10px solid var(--light-div);
     box-sizing: border-box;
 }
 
@@ -363,26 +387,6 @@ div:hover .button.is-success {
     border-top: none;
 }
 
-.move-btn {
-    display: inline-block;
-    width: 50%;
-    border: none;
-    color: #ccc;
-    background-color: transparent;
-    padding: 0.2em 1.5em;
-}
-
-.move-btn:first-child {
-    border-right: none;
-}
-
-.move-btn.left {
-    cursor: w-resize;
-}
-
-.move-btn.right {
-    cursor: e-resize;
-}
 
 /*
     Store Description
@@ -409,6 +413,7 @@ div:hover .button.is-success {
 
 #footer {
     padding-bottom: 0;
+    background-color: var(--dark-div)
 }
 
 
@@ -543,7 +548,7 @@ div:hover .button.is-success {
     }
 
     #landing-page .patent {
-        width: 30%;
+        width: 20%;
     }
 
 
