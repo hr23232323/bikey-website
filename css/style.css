@@ -22,12 +22,7 @@ body {
 
 #landing-page {
     /* The image used */
-    background-image: url("../img/landing.jpg");
-
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    height: auto;
 }
 
 #landing-page .patent {
@@ -40,6 +35,7 @@ body {
 
 #landing-page video {
     width: 100%;
+    height: 100%;
 }
 
 .section {
@@ -557,7 +553,8 @@ div:hover .button.is-success {
     }
 
     .columns {
-        margin: 0;
+        margin-left: 0;
+        margin-right: 0;
     }
 
 
