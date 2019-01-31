@@ -551,5 +551,14 @@ div:hover .button.is-success {
         width: 20%;
     }
 
+    #store {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .columns {
+        margin: 0;
+    }
+
 
 }
