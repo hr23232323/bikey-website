@@ -421,7 +421,7 @@ div:hover .button.is-success {
 */
 
 #footer {
-    padding-bottom: 0;
+    padding-bottom: 20px;
     background-color: var(--dark-div)
 }
 
